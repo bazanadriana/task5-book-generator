@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Controls from "./components/Controls";
 import BookTable from "./components/BookTable";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+
 function App() {
   const [region, setRegion] = useState("en-US");
   const [seed, setSeed] = useState("12345");
